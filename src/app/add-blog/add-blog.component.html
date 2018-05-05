@@ -1,0 +1,12 @@
+<form #blogForm="ngForm" (ngSubmit)="onSubmit()" validate>
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" placeholder="Name" [(ngModel)]="blog.name" required>
+  
+  <label for="title">Title</label>
+  <input type="text" id="title" name="title" placeholder="title" [(ngModel)]="blog.title" required>
+  
+  <label for="content">Content</label>
+  <input type="text" id="content" name="content" placeholder="content" [(ngModel)]="blog.content" required>
+  
+  <input type="submit" value="submit">
+</form>
